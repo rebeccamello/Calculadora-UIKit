@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D40CF36278CC3A700818D9B /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 9D40CF35278CC3A700818D9B /* SnapshotTesting */; };
+		9D40CF38278CC3FB00818D9B /* CalculatorViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40CF37278CC3FB00818D9B /* CalculatorViewTest.swift */; };
 		9D9C0C202788720700EA06F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9C0C1F2788720700EA06F1 /* AppDelegate.swift */; };
 		9D9C0C222788720700EA06F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9C0C212788720700EA06F1 /* SceneDelegate.swift */; };
 		9D9C0C242788720700EA06F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9C0C232788720700EA06F1 /* ViewController.swift */; };
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D40CF37278CC3FB00818D9B /* CalculatorViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewTest.swift; sourceTree = "<group>"; };
 		9D9C0C1C2788720700EA06F1 /* Calculadora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculadora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9C0C1F2788720700EA06F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D9C0C212788720700EA06F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D40CF36278CC3A700818D9B /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				9D9C0C362788720900EA06F1 /* CalculadoraTests.swift */,
+				9D40CF37278CC3FB00818D9B /* CalculatorViewTest.swift */,
 			);
 			path = CalculadoraTests;
 			sourceTree = "<group>";
@@ -161,6 +166,9 @@
 				9D9C0C342788720900EA06F1 /* PBXTargetDependency */,
 			);
 			name = CalculadoraTests;
+			packageProductDependencies = (
+				9D40CF35278CC3A700818D9B /* SnapshotTesting */,
+			);
 			productName = CalculadoraTests;
 			productReference = 9D9C0C322788720900EA06F1 /* CalculadoraTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -219,6 +227,9 @@
 				Base,
 			);
 			mainGroup = 9D9C0C132788720700EA06F1;
+			packageReferences = (
+				9D40CF34278CC3A700818D9B /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 9D9C0C1D2788720700EA06F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -272,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D40CF38278CC3FB00818D9B /* CalculatorViewTest.swift in Sources */,
 				9D9C0C372788720900EA06F1 /* CalculadoraTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +640,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D40CF34278CC3A700818D9B /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D40CF35278CC3A700818D9B /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D40CF34278CC3A700818D9B /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D9C0C142788720700EA06F1 /* Project object */;
 }
